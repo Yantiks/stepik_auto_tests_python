@@ -33,10 +33,6 @@ try:
     submit_button = browser.find_element(By.ID, "solve")
     submit_button.click()
 
-
-
-
-
 finally:
     time.sleep(10)
     browser.quit()
