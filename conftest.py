@@ -12,7 +12,7 @@ def browser():
     print("\nquit browser..")
     browser.quit()
 
-@pytest.fixture(scope = 'session')
+@pytest.fixture(scope = 'function')
 def browser_3_6(request):
     browser = webdriver.Chrome()
     yield browser

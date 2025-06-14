@@ -15,8 +15,10 @@ def answer_method():
     return answer
 
 #link = "https://stepik.org/lesson/236895/step/1"
+#переписать локаторы с названиями кнопок через текст кнопок
+#поправить линки только с айди страницы
 
-@pytest.mark.parametrize('link', ["236895/step/1", "236896/step/1", "236897/step/1", "236898/step/1", "236899/step/1", "236903/step/1", "236904/step/1" "236905/step/1"])
+@pytest.mark.parametrize('link', ["236895/step/1", "236896/step/1", "236897/step/1", "236898/step/1", "236899/step/1", "236903/step/1", "236904/step/1", "236905/step/1"])
 class TestAuthorization():
 
     def test_authorization_site(self, browser_3_6, link):

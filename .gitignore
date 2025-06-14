@@ -1,2 +1,5 @@
 # игнорировать файл с конфигом
 config.json
+.pytest_cache
+.env
+.idea
